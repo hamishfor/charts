@@ -21,7 +21,7 @@ spec:
             timeout: 9600
             environment:
               DEST_DISK: {{ index .Hardware.Disks 0 }}
-              IMG_URL: "http://192.168.2.111:8080/jammy-server-cloudimg-amd64.raw.gz"
+              IMG_URL: "http://192.168.1.11:8080/jammy-server-cloudimg-amd64.raw.gz"
               COMPRESSED: true
           - name: "grow-partition"
             image: quay.io/tinkerbell-actions/cexec:v1.0.0
