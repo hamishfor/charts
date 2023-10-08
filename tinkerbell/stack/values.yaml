@@ -8,7 +8,7 @@ stack:
     app: tink-stack
   # &publicIP is a YAML anchor. It allows us to define a value once and reference it multiple times.
   # https://helm.sh/docs/chart_template_guide/yaml_techniques/#yaml-anchors
-  loadBalancerIP: &publicIP 192.168.1.1
+  loadBalancerIP: &publicIP 192.168.1.11
   lbClass: kube-vip.io/kube-vip-class
   # Once the Kubernetes Gateway API is more stable, we will use that for all services instead of nginx.
   image: nginx:1.25.1
