@@ -5,7 +5,7 @@ deploy: true
 name: smee
 
 # The image used to launch the container.
-image: quay.io/tinkerbell/smee:v0.10.1
+image: quay.io/tinkerbell/smee:v0.10.0
 imagePullPolicy: IfNotPresent
 
 # The number of pods to run.
@@ -34,10 +34,9 @@ logLevel: "info"
 # host network.
 hostNetwork: false
 
-# publicIP when defined will be used as the IP in the following locations if they are not defined:
+# oneIP when defined will be used in place of the IP in the following, if they are not defined:
 # dhcp.httpIPXE.binaryUrl.host, dhcp.httpIPXE.scriptUrl.host, tinkServer.ip, http.osieUrl.host, dhcp.ipForPacket, dhcp.tftpIp
-# This is useful when all Tinkerbell services are running behind the same IP.
-publicIP: "127.0.0.1"
+oneIP: "127.0.0.1"
 
 # DHCP server configuration. Name is an identifier used across Kubernetes manifests for port
 # identification, ip is the IP address to bind to, and port is the port to bind to.

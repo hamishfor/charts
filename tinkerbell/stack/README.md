@@ -35,6 +35,10 @@ The stack chart does not use an ingress object and controller. This is because m
 
 Before installing the chart you'll want to customize the IP used for the load balancer (`stack.loadBalancerIP`). This IP provides ingress for Hegel, Tink, and Boots (TFTP, HTTP, and SYSLOG endpoints as well as unicast DHCP requests).
 
+You'll also want to set the IP used in DHCP packets for option 54, the location of the iPXE binaries, the `auto.ipxe` script, the syslog IP, and the IP for downloading Hook files (`smee.remoteIp`).
+
+The vast majority of the time,these 2 (`stack.loadBalancerIP` and `smee.remoteIp`) IPs will be the same.
+
 Now, deploy the chart.
 
 ```bash
