@@ -81,12 +81,12 @@ http:
   port: 7171
   # Tink Server configuration passed to the Tink Worker to establish a gRPC connection.
   tinkServer:
-    ip: ""
+    ip: "192.168.1.11"
     port: 42113
     tls: false
   osieUrl:
     scheme: "http"
-    host: ""
+    host: "192.168.1.11"
     port: 8080
     path: ""
   # Additional kernel arguments to pass to the OSIE. (k=v k=v) that are appended to the kernel cmdline in the iPXE script
