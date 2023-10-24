@@ -69,7 +69,7 @@ tftp:
   name: smee-tftp
   ip: 0.0.0.0
   port: 69
-  timeout: 5s
+  timeout: 20s
 
 # HTTP server configuration used to serve iPXE scripts. Name is an identifier used across
 # Kubernetes manifests for port identification, ip is the IP address to bind to, and port is the
