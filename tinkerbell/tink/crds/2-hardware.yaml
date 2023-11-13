@@ -13,8 +13,8 @@ spec:
       slug: hp
     instance:
       userdata: ""
-      hostname: "elite8200-1"
-      id: "e8:39:35:5c:e4:81"
+      hostname: "elite8200-0"
+      id: "2c:27:d7:1e:c9:8c"
       operating_system:
         distro: "ubuntu"
         os_slug: "ubuntu_22_04"
@@ -22,13 +22,13 @@ spec:
   interfaces:
     - dhcp:
         arch: x86_64
-        hostname: elite8200-1
+        hostname: elite8200-0
         ip:
           address: 192.168.1.71
           gateway: 192.168.1.1
           netmask: 255.255.255.0
         lease_time: 86400
-        mac: e8:39:35:5c:e4:81
+        mac: 2c:27:d7:1e:c9:8c
         name_servers:
           - 192.168.1.12
           - 192.168.1.1
